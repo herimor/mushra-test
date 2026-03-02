@@ -30,7 +30,7 @@ const PROLIFIC_ID = 'PROLIFIC_ID';
       ".mseq-sliderrow {display: flex;flex-direction: column;align-items: center;gap: 6px;}" +
       ".mseq-sliderrow input[type=range] {writing-mode: bt-lr;-webkit-appearance: slider-vertical;width: 10px;height: 100px;}" +
       ".mseq-val{width:3ch;text-align:right;font-variant-numeric:tabular-nums;}" +
-      ".mseq-helper{color:#374151;font-size:18px;margin-top:4px;text-align:center;}" +
+      ".mseq-helper{color:#374151;font-size:18px;margin:4px auto 0 auto;text-align:center;max-width:1000px;}" +
       ".mseq-continue{text-align:center;margin-top:18px;}" +
       ".mseq-continue .jspsych-btn:disabled{opacity:.45;cursor:not-allowed;}";
     var style = document.createElement("style");
@@ -51,7 +51,7 @@ const PROLIFIC_ID = 'PROLIFIC_ID';
       slider_min: { default: 0 },
       slider_max: { default: 100 },
       slider_step: { default: 1 },
-      prompt: { default: "Listen to each clip and rate its naturalness on a scale from 0 to 100, where 0 means “bad” and 100 means “excellent”. You can listen to each audio and change your rating several times. Ensure that you move all the sliders before proceeding to the next page." }
+      prompt: { default: "Listen to each clip and rate its naturalness on a scale from 0 to 100, where 0 means “bad” and 100 means “excellent”.<br>You can listen to each audio and change your rating several times.<br>Ensure that you move all the sliders before proceeding to the next page." }
     }
   };
 
